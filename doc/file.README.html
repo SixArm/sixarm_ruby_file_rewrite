@@ -6,7 +6,7 @@
 <title>
   File: README
   
-    &mdash; Documentation by YARD 0.9.14
+    &mdash; Documentation by YARD 0.9.19
   
 </title>
 
@@ -57,56 +57,50 @@
         <div class="clear"></div>
       </div>
 
-      <div id="content"><div id='filecontents'><h1>SixArm.com → Ruby → <br> File#rewrite</h1>
-
+      <div id="content"><div id='filecontents'>
+<h1 id="label-SixArm.com+-E2-86-92+Ruby+-E2-86-92++File-23rewrite">SixArm.com → Ruby → <br> File#rewrite</h1>
 <!--header-open-->
-
-<p><a href="http://badge.fury.io/rb/sixarm_ruby_file_rewrite"><img src="https://badge.fury.io/rb/sixarm_ruby_file_rewrite.svg" alt="Gem Version"></a>
-<a href="https://travis-ci.org/SixArm/sixarm_ruby_file_rewrite"><img src="https://travis-ci.org/SixArm/sixarm_ruby_file_rewrite.png" alt="Build Status"></a>
-<a href="https://codeclimate.com/github/SixArm/sixarm_ruby_file_rewrite/maintainability"><img src="https://api.codeclimate.com/v1/badges/4061fe43b9c37afc7617/maintanability" alt="Code Climate"></a></p>
-
-<ul>
-<li>Git: <a href="https://github.com/SixArm/sixarm_ruby_file_rewrite">https://github.com/SixArm/sixarm_ruby_file_rewrite</a></li>
-<li>Doc: <a href="http://sixarm.com/sixarm_ruby_file_rewrite/doc">http://sixarm.com/sixarm_ruby_file_rewrite/doc</a></li>
-<li>Gem: <a href="https://rubygems.org/gems/sixarm_ruby_file_rewrite">https://rubygems.org/gems/sixarm_ruby_file_rewrite</a></li>
-<li>Contact: Joel Parker Henderson, <a href="mailto:joel@sixarm.com">joel@sixarm.com</a></li>
-<li>Project: <a href="CHANGES.md">changes</a>, <a href="LICENSE.md">license</a>, <a href="CONTRIBUTING.md">contributing</a>.</li>
-</ul>
-
+<p><a href="http://badge.fury.io/rb/sixarm_ruby_file_rewrite"><img src="https://badge.fury.io/rb/sixarm_ruby_file_rewrite.svg"></a> <a href="https://travis-ci.org/SixArm/sixarm_ruby_file_rewrite"><img src="https://travis-ci.org/SixArm/sixarm_ruby_file_rewrite.png"></a> <a href="https://codeclimate.com/github/SixArm/sixarm_ruby_file_rewrite/maintainability"><img src="https://api.codeclimate.com/v1/badges/4061fe43b9c37afc7617/maintainability"></a></p>
+<ul><li>
+<p>Git: <a href="https://github.com/SixArm/sixarm_ruby_file_rewrite">github.com/SixArm/sixarm_ruby_file_rewrite</a></p>
+</li><li>
+<p>Doc: <a href="http://sixarm.com/sixarm_ruby_file_rewrite/doc">sixarm.com/sixarm_ruby_file_rewrite/doc</a></p>
+</li><li>
+<p>Gem: <a href="https://rubygems.org/gems/sixarm_ruby_file_rewrite">rubygems.org/gems/sixarm_ruby_file_rewrite</a></p>
+</li><li>
+<p>Contact: Joel Parker Henderson, <a href="mailto:joel@sixarm.com">joel@sixarm.com</a></p>
+</li><li>
+<p>Project: <a href="CHANGES.md">changes</a>, <a href="LICENSE.md">license</a>, <a href="CONTRIBUTING.md">contributing</a>.</p>
+</li></ul>
 <!--header-shut-->
-
-<h2>Introduction</h2>
+<h2 id="label-Introduction">Introduction</h2>
 
 <p>Change a file&#39;s data by writing to a temporary file, then moving the temporary file over the original file.</p>
-
 <!--install-open-->
+<h2 id="label-Install">Install</h2>
 
-<h2>Install</h2>
-
-<h3>Gem</h3>
+<h3 id="label-Gem">Gem</h3>
 
 <p>To install this gem in your shell or terminal:</p>
 
 <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='id identifier rubyid_install'>install</span> <span class='id identifier rubyid_sixarm_ruby_file_rewrite'>sixarm_ruby_file_rewrite</span>
 </code></pre>
 
-<h3>Gemfile</h3>
+<h3 id="label-Gemfile">Gemfile</h3>
 
 <p>To add this gem to your Gemfile:</p>
 
 <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sixarm_ruby_file_rewrite</span><span class='tstring_end'>&#39;</span></span>
 </code></pre>
 
-<h3>Require</h3>
+<h3 id="label-Require">Require</h3>
 
 <p>To require the gem in your code:</p>
 
 <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sixarm_ruby_file_rewrite</span><span class='tstring_end'>&#39;</span></span>
 </code></pre>
-
 <!--install-shut-->
-
-<h2>Example</h2>
+<h2 id="label-Example">Example</h2>
 
 <p>Example code that changes an existing file <code>example.txt</code>:</p>
 
@@ -116,22 +110,26 @@
 <span class='id identifier rubyid_file'>file</span><span class='period'>.</span><span class='id identifier rubyid_rewrite'>rewrite</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Hello World</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
 </code></pre>
 
-<h2>Tracking</h2>
-
-<ul>
-<li>Package: sixarm_ruby_file_rewrite</li>
-<li>Version: 1.0.0</li>
-<li>Created: 2018-02-04</li>
-<li>Updated: 2018-02-06</li>
-<li>License: Open source as described in the file LICENSE.md</li>
-<li>Contact: Joel Parker Henderson (<a href="mailto:joel@joelparkerhenderson.com">joel@joelparkerhenderson.com</a>)</li>
-</ul>
+<h2 id="label-Tracking">Tracking</h2>
+<ul><li>
+<p>Package: sixarm_ruby_file_rewrite</p>
+</li><li>
+<p>Version: 1.0.0</p>
+</li><li>
+<p>Created: 2018-02-04</p>
+</li><li>
+<p>Updated: 2018-02-06</p>
+</li><li>
+<p>License: Open source as described in the file LICENSE.md</p>
+</li><li>
+<p>Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)</p>
+</li></ul>
 </div></div>
 
       <div id="footer">
-  Generated on Sun Jul  8 19:45:38 2018 by
+  Generated on Thu Apr 25 22:30:03 2019 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.14 (ruby-2.5.1).
+  0.9.19 (ruby-2.6.3).
 </div>
 
     </div>
